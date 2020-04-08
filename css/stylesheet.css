@@ -1,0 +1,28 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+#menu {
+  width: 125px; 
+}
+#menu a {
+  background-color: #cdc0b0;
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;  
+}
+#menu a:hover {
+  background-color: #ccc;
+}
+#menu a.active {
+  background-color: #ccc;
+  color: black;
+}

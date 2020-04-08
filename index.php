@@ -2,7 +2,6 @@
     require "headerA4.php";
 ?>
 
-        ?>
         <main class="content">
             
         </main>
