@@ -1,4 +1,3 @@
-
 <div id="menu">
         <a href="" class="active">Home</a>
         <a href="">Profile</a>
