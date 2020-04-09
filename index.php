@@ -1,11 +1,18 @@
+
 <?php
-    require "headerA4.php";
+    include_once "headerA4.php";
 ?>
-
-        <main class="content">
-            
-        </main>
+<body>
+<?php
+	include "menu.php"
+?>
+  <main class="content">
+  <h1>Home</h1>
+  </main>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
+  </body>
 
 <?php
-    require "footerA4.php";
+    include_once "footerA4.php";
 ?>

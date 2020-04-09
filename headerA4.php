@@ -1,35 +1,27 @@
 <html>
     <head>
         <title>Eternal Draft Simulator</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="<?=$docRoot?>css/style.css" rel="stylesheet" type="text/css" />
-        <script src="<?=$docRoot?>js/site.js" type="text/javascript"></script>
-    </head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+  </head>
     <body>
-        <div id="header" style="background-image: '<?=$docRoot?>images/header.png'">
-                <div id="headerText">
-                    <div id="headerTitle">
+        <div id="header">
+                    <div class="headerTitle">
                         Eternal Draft Simulator
                     </div>
-                    <div id="subtitle">
-                        Home Page
-                    </div>
+
                     
-                    <div id="colors">
-                        <table class="loginTable">
-                            <tr>
-                                <td>
-                                    <a href="login.php"><button type="button">Log In</button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="registration.php"><button type="button">Register</button></a>
-                                </td>
-                            </tr>
-                        </table>
-                        <img id="profilepicture"  src="<?=$docRoot?>images/profile.png" alt="profile picture"/>
+                    <div id="buttons">
+
+                                    <a href="loginform.php"><button type="button">Log In</button></a>
+
+                                    <a href="registrationform.php"><button type="button">Register</button></a>
+
+                        <img id="profilepicture"  src="images/profile.png" alt="profile picture"/>
                     </div>
-                </div>
             </div>
