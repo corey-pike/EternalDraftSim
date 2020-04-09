@@ -8,11 +8,10 @@
   <meta name="description" content="description here">
   <meta name="keywords" content="keywords,here">
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-    </head>
+  </head>
     <body>
-        <div id="header" style="background-image:'images/header.png'">
-                <div id="headerText">
-                    <div id="headerTitle">
+        <div id="header">
+                    <div class="headerTitle">
                         Eternal Draft Simulator
                     </div>
 
@@ -25,5 +24,4 @@
 
                         <img id="profilepicture"  src="images/profile.png" alt="profile picture"/>
                     </div>
-                </div>
             </div>

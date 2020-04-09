@@ -3,11 +3,11 @@
     include_once "headerA4.php";
 ?>
 <body>
-<h1>Draft</h1>
-        <main class="content">
 <?php
 	include "menu.php"
 ?>
+  <main class="content">
+  <h1>Draft</h1>
 <div id="">
 			<h2>Restrictions</h2>
 			Uncheck any box to apply the restriction
@@ -84,4 +84,3 @@
 <?php
     include_once "footerA4.php";
 ?>
-</html>

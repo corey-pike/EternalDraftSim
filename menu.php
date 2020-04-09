@@ -1,4 +1,4 @@
-<div id="menu" class='col'>
+<div id="menu" class="sidenav">
 
        <a href="index.php" class="">Home</a>
        <a href="profile.php">Profile</a>
