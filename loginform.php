@@ -15,18 +15,19 @@
 			<h1>
 				<a>Log In</a>
 			</h1>
+			<small>this will be a popup window</small>
 			<form id="login" class=""  method="post" action="">					
 				<ul >
 					<li id="" >
 						<label class="" for="">Username </label>
 						<div>
-							<input id="" name="" class="" type="text" maxlength="50" value=""/> 
+							<input id="" name="" class="" type="text" maxlength="50" pattern="[a-zA-Z0-9]{1,}#[0-9]{4}" title="Can only use alphanumeric characters and must end with '#' followed by 4 numbers"/> 
 						</div>
 					</li>
 					<li id="" >
 						<label class="" for="">Password </label>
 						<div>
-							<input id="" name="" class="" type="text" maxlength="15" value=""/> 
+							<input type="password" id="password" name="password" pattern="^([a-zA-Z0-9@*#]{8,15})$" title="Password must consists of at least 8 characters and not more than 15 characters">
 						</div> 
 					</li>
 						<input id="saveForm" class="" type="submit" name="submit" value="Submit" />
