@@ -1,11 +1,14 @@
 body {
-  background-color: powderblue;
+  background-color: white;
 }
 h1 {
-  color: blue;
+  color: red;
 }
 p {
   color: red;
+}
+ul, li {
+    list-style: none;
 }
 #menu {
   width: 125px; 
@@ -17,12 +20,35 @@ p {
   padding: 10px;
   text-decoration: none;
   font-size: 20px;
-  text-align: center;  
+  text-align: center;
 }
+
 #menu a:hover {
   background-color: #ccc;
 }
 #menu a.active {
   background-color: #ccc;
   color: black;
+}
+#buttons{
+	float: right;
+}
+#headerTitle {
+	color: red;
+	padding: 10px;
+	text-align: center;
+	font-size: 32px;
+}
+#header{
+	background-color: black;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
