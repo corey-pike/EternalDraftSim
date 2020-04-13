@@ -11,34 +11,34 @@
 	<link rel="stylesheet" href="stylesheet.css" type="text/css">
 	</head>
 	<body id="" >
-		<div id="">
+		<div id="content">
 			<h1>
 				<a>Account Registration</a>
 			</h1>
-			<form id="registration" class=""  method="post" action="">					
+			<form id="registration" class="userForm"  method="post" action="">					
 				<ul >
 					<li id="" >
-						<label class="" for="">Eternal Username </label>
+						<label class="formLabel" for="username">Eternal Username </label>
 						<div>
-							<input id="" name="" class="" type="text" maxlength="50" value=""/> 
+							<input id="username" name="username" class="" type="text" maxlength="50" value=""/> 
 						</div>
 					</li>
 					<li id="" >
-						<label class="" for="">Email </label>
+						<label class="formLabel" for="email">Email </label>
 						<div>
-							<input id="" name="" class="" type="text" maxlength="50" value=""/> 
+							<input id="email" name="email" class="" type="text" maxlength="50" value=""/> 
 						</div>
 					</li>
 					<li id="" >
-						<label class="" for="">Password </label>
+						<label class="formLabel" for="password">Password </label>
 						<div>
-							<input id="" name="" class="" type="text" maxlength="15" value=""/> 
+							<input id="password" name="password" class="" type="text" maxlength="15" value=""/> 
 						</div> 
 					</li>
 					<li id="" >
-						<label class="" for="">Confirm Password </label>
+						<label class="formLabel" for="password2">Confirm Password </label>
 						<div>
-							<input id="" name="" class="" type="text" maxlength="15" value=""/> 
+							<input id="password2" name="password2" class="" type="text" maxlength="15" value=""/> 
 						</div> 
 					</li>
 						<input id="saveForm" class="" type="submit" name="submit" value="Submit" />
