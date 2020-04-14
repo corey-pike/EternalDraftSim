@@ -13,8 +13,8 @@
       echo '<button onclick="window.location.href = \'profileform.php\';">Edit</button>';
   } else {
       echo '<p>You\'re not logged in!</p>';
-      echo '<button onclick="window.location.href = \'registrationform.php\';">Log In</button><br/>';
-      echo '<button onclick="window.location.href = \'profileform.php\';">Register</button>';
+      echo '<button onclick="window.location.href = \'loginform.php\';">Log In</button><br/>';
+      echo '<button onclick="window.location.href = \'registrationform.php\';">Register</button>';
   }
   ?>
   </main>
