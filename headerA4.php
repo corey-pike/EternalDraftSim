@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION['isLoggedIn'] = isset($_SESSION['username']);
+?>
 <html>
     <head>
         <title>Eternal Draft Simulator</title>
