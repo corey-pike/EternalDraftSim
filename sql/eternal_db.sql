@@ -45,6 +45,7 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `user_name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
   `date_created` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

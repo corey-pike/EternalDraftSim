@@ -15,7 +15,7 @@
 			<h1>
 				<a>Account Registration</a>
 			</h1>
-			<form id="registration" class="userForm"  method="post" action="">
+                    <form id="registration" class="userForm"  method="post" action="profile.php">
 			<small>this will be a popup window</small>
 			<form id="registration" class=""  method="post" action="">					
 				<ul >
