@@ -9,7 +9,7 @@
 			<h1>
 				<a>Edit Profile</a>
 			</h1>
-			<form id="profile" class=""  method="post" action="">					
+                    <form id="profile" class=""  method="post" action="profile.php">					
 				<ul >
 					<li id="" >
 						<label class="" for="">Eternal Username </label>
