@@ -1,10 +1,44 @@
 
 <?php
     include_once "headerA4.php";
-?>
+    include "menu.php";
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $password2 = $_POST['password2'];
+        if (validate())
+        {
+            $_SESSION['isLoggedIn'] = true;
+            $_SESSION['username'] = $username;
+            $_SESSION['email'] = $email;
+            $hash = password_hash($password, PASSWORD_DEFAULT);
+            $_SESSION['password'] = $hash;
+            
+            $servername = "localhost";
+            $dbname = "eternal_db";
 
-<?php
-	include "menu.php"
+            // Create connection
+            $conn = new mysqli($servername, "root", "admin", $dbname);
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            $sql = "INSERT INTO user (user_name, email, password)
+            VALUES ($username, $email, $hash)";
+
+            if ($conn->query($sql) === TRUE) {
+                echo "Account created successfully";
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+
+            $conn->close();
+        }
+    }
+    
+    
 ?>
   <main class="content">
   <h1>Profile</h1>
