@@ -5,7 +5,23 @@
 <?php
 	include "menu.php"
 ?>
-
+<style>
+.outsideWrapper{ 
+    width:303px; height:478px; 
+    margin:20px 60px; 
+    border:none;}
+.insideWrapper{ 
+    width:100%; height:100%; 
+    position:relative;}
+.coveredImage{ 
+    width:100%; height:100%; 
+    position:absolute; top:0px; left:0px;
+}
+.coveringSVG{ 
+    width:100%; height:100%; 
+    position:absolute; top:0px; left:0px;
+}
+</style>
   <main class="content">
   <h1>Cards</h1>
 		<div id="">
@@ -72,9 +88,30 @@
 			<button type="reset" value="Reset">Reset</button>
 		</form>
 		</div>
-  </main>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
+<?php
+echo '
+	<div class="outsideWrapper">
+	<div class="insideWrapper">
+	<img src="images/eternal.png" class="coveredImage">
+	<svg class="coveringSVG">
+	
+  <text x="16%" y="17%" dominant-baseline="middle" text-anchor="middle" style="fill:white;font-size:270%;">1</text>
+  <text x="53%" y="45" dominant-baseline="middle" text-anchor="middle" style="fill:white;font-size:125%;">F</text>
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" style="fill:white;font-size:130%;">Grenadin Drone</text>
+  <circle cx="20%" cy="54%" r="30" stroke="gray" stroke-width="2" fill="black" />
+  <text x="20%" y="55%" dominant-baseline="middle" text-anchor="middle" style="fill:white;font-size:270%;">1</text>
+  <circle cx="80%" cy="54%" r="30" stroke="gray" stroke-width="2" fill="black" />
+  <text x="80%" y="55%" dominant-baseline="middle" text-anchor="middle" style="fill:white;font-size:270%;">1</text>
+  <text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" style="fill:black;">Summon: Play a 1/1 Grenadin.</text>
+  <text x="50%" y="94%" dominant-baseline="middle" text-anchor="middle" style="fill:black;font-size:120%;">Unit</text>
+	</svg>
+	</div>
+	</div>
+	';
+?>
+</main>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
 
 <?php
     include_once "footerA4.php";
