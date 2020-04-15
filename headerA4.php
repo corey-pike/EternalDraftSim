@@ -26,6 +26,6 @@
 
                                     <a href="registrationform.php"><button type="button">Register</button></a>
 
-                        <img id="profilepicture"  src="images/profile.png" alt="profile picture"/>
+                        <!--<img id="profilepicture"  src="images/profile.png" alt="profile picture"/> -->
                     </div>
             </div>

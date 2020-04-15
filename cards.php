@@ -1,6 +1,7 @@
 
 <?php
     include_once "headerA4.php";
+	include_once "db_config.php";
 ?>
 <?php
 	include "menu.php"
@@ -26,7 +27,7 @@
   <h1>Cards</h1>
 		<div id="">
 		<h2>Filter</h2>
-		<form>
+		<form action="" method="post">
 			<input type="text" placeholder="Search..">
 			<br>
 			<div>
@@ -51,16 +52,16 @@
 			</div>
 			<div>
 				<strong>Faction:</strong>
-				<input type="checkbox" id="fire" name="fire" value="fire">
-				<label for="fire"> Fire </label>
-				<input type="checkbox" id="time" name="time" value="time">
-				<label for="time"> Time </label>
-				<input type="checkbox" id="justice" name="justice" value="justice">
-				<label for="justice"> Justice </label>
-				<input type="checkbox" id="primal" name="primal" value="primal">
-				<label for="primal"> Primal </label>
-				<input type="checkbox" id="shadow" name="shadow" value="shadow">
-				<label for="shadow"> Shadow </label>
+				<input type="checkbox" id="f" name="f" value="f">
+				<label for="f"> Fire </label>
+				<input type="checkbox" id="t" name="t" value="t">
+				<label for="t"> Time </label>
+				<input type="checkbox" id="j" name="j" value="j">
+				<label for="j"> Justice </label>
+				<input type="checkbox" id="p" name="p" value="p">
+				<label for="p"> Primal </label>
+				<input type="checkbox" id="s" name="s" value="s">
+				<label for="s"> Shadow </label>
 			</div>
 			<div>
 				<strong>Cost:</strong>
