@@ -33,7 +33,16 @@
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
+            $dateQuery = "SELECT date_created FROM user WHERE user_name=$username AND email=$email";
+            $result = $conn->query($sql);
 
+            if ($result->num_rows == 1) {
+                $_SESSION['dateCreated'] = $result;
+            } else {
+                echo "0 results";
+                
+            }
+            
             $conn->close();
         }
     }
@@ -45,6 +54,9 @@
   <?php
   if ($_SESSION['isLoggedIn']){
       echo '<button onclick="window.location.href = \'profileform.php\';">Edit</button>';
+      echo '<p> Eternal Tag: '.$_SESSION['username'].'</p>';
+      echo '<p> Email: '.$_SESSION['email'].'</p>';
+      echo '<p> Date Created: '.$_SESSION['dateCreated'].'</p>';
   } else {
       echo '<p>You\'re not logged in!</p>';
       echo '<button onclick="window.location.href = \'loginform.php\';">Log In</button><br/>';
