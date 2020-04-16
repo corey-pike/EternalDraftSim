@@ -1,11 +1,8 @@
 <?php
 	include "headerA4.php";
-?>
-<?php
 	include "menu.php"
 ?>
 <main class="content">
-		<div id="">
 			<h1>
 				<a>Edit Profile</a>
 			</h1>
@@ -40,7 +37,6 @@
                                         </li>
 				</ul>
 			</form>	
-		</div>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"/>
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"/>
 		</main>
