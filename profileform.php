@@ -6,7 +6,7 @@
 			<h1>
 				<a>Edit Profile</a>
 			</h1>
-                    <form id="profile" class=""  method="post" action="profile.php">					
+    <form name="profile" class=""  method="post" action="profile.php" onsubmit="return validateUserForm('profile')">					
 				<ul >
 					<li>
 						<label class="formLabel" for="username">Eternal Username </label>
