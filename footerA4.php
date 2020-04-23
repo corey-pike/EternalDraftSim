@@ -1,4 +1,5 @@
-<div id="footer">
+
+<footer id="footer">
             <div class="footGrid">
                 <div class="gridleft">Hello, User</div>
                 <div class="gridmid"><a href="https://www.direwolfdigital.com/">
@@ -6,6 +7,8 @@
                 <div class="gridright"><a href="https://www.metrostate.edu">
                 <img alt="Metro State" src="images/metropolitan-state.jpg"></a></div>
             </div>
-        </div>
+        </footer>
+		</div>
+		</main>
     </body>
 </html>
